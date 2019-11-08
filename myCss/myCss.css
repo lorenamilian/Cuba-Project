@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+
+  }
+  
+.header {
+    text-align: center;
+}
+.logo{
+  padding-top: 15%;
+}
+.cuba{
+  padding-bottom: 40ss%;
+  font-size: 90px;
+  font-family: 'Cabin Sketch', cursive;
+  color: azure;
+  text-shadow: 8px 8px 14px #000000;
+  margin-bottom: 50px;
+  
+}
+  
+.background{
+  background-image: url("123.jpg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 10px 10px 10px rgb(131, 131, 131);
+  padding-bottom: 50px;
+}
+
+  .allinform {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 8px 4px;
+    border: 5px solid gray;
+    border-radius: 20px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .inform {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+
+  }
+ 
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .inform {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .inform {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  p{
+      font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   opacity: 0.4;
+}
+  
+  li {
+    float: right;
+    font-size: 25px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
