@@ -40,8 +40,6 @@
     flex-wrap: wrap;
     margin: 30px;
     padding: 8px 4px;
-    border: 5px solid gray;
-    border-radius: 20px;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -107,4 +105,28 @@
 
 .youtube{
   margin: auto;
+}
+
+.flooter{
+  padding: 2% 30%;
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+hr{
+  border: 1px solid grey;
+  margin-bottom: 0;
+}
+
+.flLink:link, .flLink:visited {
+  color: rgb(66, 65, 65);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.flLink:hover, .flLink:active {
+   color: rgb(43, 43, 43);
 }
