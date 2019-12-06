@@ -1,22 +1,22 @@
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
- 
-  }
-  
-  /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%;
+body,
+html {
+  background-color: white;
+  margin: 0%;
+}
 
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+  height: 100%;
 }
 
 .bgimg {
   /* Background image */
-  background-image: url('event1.jpg');
+  background-image: url("event1.jpg");
   /* Full-screen */
   height: 50%;
-  width: 50%;
+  width: 100%;
   /* Center the background image */
   background-position: center;
   /* Scale and zoom in the image */
@@ -29,8 +29,6 @@ body, html {
   font-family: "Courier New", Courier, monospace;
   /* Set the font-size to 25 pixels */
   font-size: 25px;
-  margin-left: 20%;
-
 }
 
 /* Position text in the bottom-left corner */
@@ -54,42 +52,87 @@ hr {
   margin: auto;
   width: 40%;
 }
-  .ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-   opacity: 0.4;
-   margin-bottom: 5%;  
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.4;
+  margin-bottom: 5%;
+}
+
+.li {
+  float: right;
+  font-size: 25px;
+}
+
+.li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: #111;
+}
+
+#more {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+
+.allRead {
+  padding: 0 3%;
+  font-size: 180%;
+}
+.btnCss {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(78, 78, 78);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+}
+.btnCss:hover {
+}
+#h3 {
+  text-align: center;
+  color: rgb(83, 83, 83);
+  padding: 0 2%;
+}
+h2 {
+  font-size: 125%;
+}
+.title {
+  font-size: 60px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .bgimg {
+    height: 80%;
+    font-size: 112%;
   }
-  
   .li {
-    float: right;
-    font-size: 25px;
+    font-size: 18px;
   }
-  
-  .li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .li a:hover {
-    background-color: #111;
-  }
-
-  #more {display: none;}
-  #more2 {display: none;}
-  #more3 {display: none;}
-
-  .allRead{
+  .allRead {
     padding: 0 3%;
-    font-size: 180%;
+    font-size: 130%;
   }
-  .btnCss{
+  .btnCss {
     display: inline-block;
     border-radius: 4px;
     border: none;
@@ -102,11 +145,11 @@ hr {
     cursor: pointer;
     margin: 5px;
   }
-  .btnCss:hover{
-
+  h2 {
+    font-size: 125%;
   }
-#h3{
-    text-align: center;
-    color: rgb(83, 83, 83);
-    padding: 2%;
+  .title {
+    font-size: 40px;
+    padding-top: 20px;
+  }
 }

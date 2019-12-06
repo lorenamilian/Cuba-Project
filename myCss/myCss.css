@@ -1,30 +1,30 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
 
-  }
-  
+body {
+  margin: 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .header {
-    text-align: center;
+  text-align: center;
 }
-.logo{
-  padding-top: 10;
+.logo {
+  padding-top: 20;
+  margin-right: auto;
+  margin-left: auto;
 }
-.cuba{
+.cuba {
   padding-bottom: 10%;
   font-size: 70px;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
   color: azure;
   text-shadow: 8px 8px 14px #000000;
-  
 }
-  
-.background{
+
+.background {
   background-image: url("123.jpg");
   height: 1000px;
   background-position: center;
@@ -35,98 +35,157 @@
   padding-bottom: 50px;
 }
 
-  .allinform {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-    padding: 8px 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+.allinform {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  padding: 8px 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.inform {
+  flex: 50%;
+  max-width: 50%;
+  padding: 1% 1% 4% 1%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
   .inform {
     flex: 50%;
     max-width: 50%;
-    padding: 1% 1% 4% 1% ;
-
-
   }
- 
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 800px) {
-    .inform {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .inform {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
-  .p{
-      font-size: 20px;
-      padding: 2% 3%;
-  }
-  p{
-    font-size: 150%;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-   opacity: 0.4;
 }
-  
-  li {
-    float: right;
-    font-size: 25px;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .inform {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
-.youtube{
+.p {
+  font-size: 18px;
+  padding: 10% 3% 2% 3%;
+}
+
+p {
+  font-size: 150%;
+  padding-top: 30px;
+}
+
+.ul1 {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.4;
+}
+
+.list {
+  float: right;
+  font-size: 60px;
+}
+
+.list a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.list a:hover {
+  background-color: #111;
+}
+
+.youtube {
   margin: auto;
 }
 
-.flooter{
-  padding: 2% 30%;
-  background-color: white;
-  text-align: center;
-  margin-top: 0;
-}
-
-hr{
+hr {
   border: 1px solid grey;
   margin-bottom: 0;
 }
 
-.flLink:link, .flLink:visited {
-  color: rgb(66, 65, 65);
-  padding: 14px 25px;
+ul {
+  list-style-type: none;
+  float: right;
+  margin-left: 40px;
+  padding-left: 400px;
+  text-align: right;
+}
+a {
+  display: block;
   text-align: center;
+  padding: 2px 16px 14px 0;
   text-decoration: none;
-  display: inline-block;
+  margin-right: 0;
+  text-align: right;
+  color: rgb(56, 56, 56);
+  font-size: 18px;
+}
+#flooter {
+  margin: 30px;
+  padding: 8px 4px;
 }
 
-.flLink:hover, .flLink:active {
-   color: rgb(43, 43, 43);
+/* Create four equal columns that sits next to each other */
+.flex {
+  flex: 50%;
+
+  padding: 1% 30% 4% 0%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  resize: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .allfloot {
+    flex: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .flex {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .cuba {
+    font-size: 60px;
+  }
+  .logo {
+    width: 300px;
+  }
+  .background {
+    height: 600px;
+    padding-bottom: 0px;
+  }
+  .allinform {
+    display: flex;
+    margin: 0px;
+    padding: 8px px;
+  }
+  .flex {
+    flex: 100%;
+    max-width: 100%;
+    padding: 1% 30% 4% 0%;
+  }
+  ul {
+    padding-left: 50px;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 600px;
+    height: 400px;
+  }
 }
